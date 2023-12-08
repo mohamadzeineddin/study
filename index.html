@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dars</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: rgb(255, 255, 255);
+      }
+
+      .tabs {
+        display: flex;
+        justify-content: space-around;
+        background-color: #333;
+        color: #fff;
+        padding: 10px 0;
+      }
+
+      .tab {
+        cursor: pointer;
+        padding: 10px;
+        transition: background-color 0.3s;
+      }
+
+      .tab:hover {
+        background-color: #555;
+      }
+
+      .tab-content {
+        display: none;
+        padding: 20px;
+      }
+
+      .tab-content.active {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="tabs">
+      <div class="tab" onclick="changeTab(1)">phy</div>
+      <div class="tab" onclick="changeTab(2)">bio</div>
+      <div class="tab" onclick="changeTab(3)">chem</div>
+      <div class="tab" onclick="changeTab(4)">math</div>
+    </div>
+
+    <div id="tabContent1" class="tab-content active">
+      <h2>phy videos:</h2>
+      <h1>
+        <a href="https://youtu.be/fH2AEJ4KhRY?si=7QXjrVoom7Sp2Yc7"
+          >Phy chapter 5</a
+        >
+      </h1>
+      <h1>
+        <a href="https://youtu.be/E43JRz6kxtc?si=cOtssxbvMVzf5kXu"
+          >Phy chapter 6</a
+        >
+      </h1>
+    </div>
+
+    <div id="tabContent2" class="tab-content">
+      <h2>bio videos:</h2>
+      <h1>
+        <a href="https://youtu.be/URUJD5NEXC8?si=wema-0InzEgmfY64"
+          >Bio Channel for bio lessons</a
+        >
+      </h1>
+    </div>
+
+    <div id="tabContent3" class="tab-content">
+      <h2>chem videos:</h2>
+      <p>link</p>
+    </div>
+
+    <div id="tabContent4" class="tab-content">
+      <h2>math videos:</h2>
+      <p>link</p>
+    </div>
+
+    <script>
+      function changeTab(tabNumber) {
+        // Hide all tab content
+        document.querySelectorAll(".tab-content").forEach((content) => {
+          content.classList.remove("active");
+        });
+
+        // Show the selected tab content
+        document
+          .getElementById("tabContent" + tabNumber)
+          .classList.add("active");
+      }
+    </script>
+  </body>
+</html>
