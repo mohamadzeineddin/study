@@ -9,7 +9,8 @@
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
-        background-color: rgb(255, 255, 255);
+        background-color: #f4f4f4;
+        color: #333;
       }
 
       .tabs {
@@ -33,10 +34,25 @@
       .tab-content {
         display: none;
         padding: 20px;
+        border: 1px solid #ccc;
+        background-color: #fff;
       }
 
       .tab-content.active {
         display: block;
+      }
+
+      h2 {
+        color: #333;
+      }
+
+      a {
+        color: #007bff;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
       }
     </style>
   </head>
@@ -51,21 +67,28 @@
     <div id="tabContent1" class="tab-content active">
       <h2>phy videos:</h2>
       <h1>
-        <a href="https://youtu.be/fH2AEJ4KhRY?si=7QXjrVoom7Sp2Yc7"
+        <a
+          href="https://youtu.be/fH2AEJ4KhRY?si=7QXjrVoom7Sp2Yc7"
+          title="Watch Phy chapter 5 video"
           >Phy chapter 5</a
         >
       </h1>
       <h1>
-        <a href="https://youtu.be/E43JRz6kxtc?si=cOtssxbvMVzf5kXu"
+        <a
+          href="https://youtu.be/E43JRz6kxtc?si=cOtssxbvMVzf5kXu"
+          title="Watch Phy chapter 6 video"
           >Phy chapter 6</a
         >
       </h1>
+      <img src="phy quiz.jfif" alt="" style="height: 500px; width: 200px" />
     </div>
 
     <div id="tabContent2" class="tab-content">
       <h2>bio videos:</h2>
       <h1>
-        <a href="https://youtu.be/URUJD5NEXC8?si=wema-0InzEgmfY64"
+        <a
+          href="https://youtu.be/URUJD5NEXC8?si=wema-0InzEgmfY64"
+          title="Visit Bio Channel for bio lessons"
           >Bio Channel for bio lessons</a
         >
       </h1>
